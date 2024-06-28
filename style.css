@@ -22,7 +22,7 @@ body {
 }
 
 .header-section {
-    background-image: url(/image/car1.jpg);
+    background-image: url(./image/car1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
