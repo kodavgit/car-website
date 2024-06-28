@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    
+    <section class="login">
+        <div class="login-container">
+            <div class="login-image">
+                <img src="image/car9.jpg" alt="">
+            </div>
+
+            <div class="login-form">
+                <h2>Login</h2>
+                <h4><span class="login-details">Default Username: </span>kodav</h4>
+                <h4><span class="login-details">Default Password:  </span>david</h4>
+                <form action="homePage.html" onsubmit="return(validate());">
+                    <div class="login-input">
+                        <input id="user" type="text" placeholder="Enter Your Username" >
+                    </div>
+                    
+                    <div class="login-input">
+                        <input id="pass" type="password" placeholder="Enter Your Password">
+                    </div>
+
+                    <button class="btn" id="login-btn" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

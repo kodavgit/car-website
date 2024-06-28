@@ -1,0 +1,463 @@
+* {
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+    
+:root {
+    --bg-color: #57595c;
+    --second-bg-color: #beb2b2;
+    --first-text-color: #fff;
+    --second-text-color: #f1eae9;
+    --third-text-color: #8a8888;
+    --main-color: #e44805;
+    --btn-color: #8f2e04;
+    --shadow: 1px 1px 1px #000;
+}
+
+/* login section */
+
+.login {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/image/car4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 60%;
+    border: 4px solid rgb(238, 68, 16);
+    border-radius: 15px;
+}
+
+.login-image {
+    width: 50%;
+    height: 100%;
+}
+
+.login-image img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.login-form {
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgba(254, 252, 252, 0.4);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    text-align: center;
+}
+
+.login-form h2 {
+    font-size: 28px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    color: var(--first-text-color); 
+}
+
+.login-form h4 {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.login-form h4 .login-details {
+    color: rgb(252, 95, 17);
+}
+
+.login-input input {
+    width: 80%;
+    height: 40px;
+    border: 1px solid var(--bg-color);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.login-input .para {
+    color: red;
+    width: 300px;
+    height: 30px;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.login-input input[type=text],
+.login-input input[type=password] {
+    padding-left: 10px; 
+    color: var(--main-color);
+}
+
+.login-input input:focus {    
+    border: 3px solid var(--main-color);
+    outline: none;
+}
+
+.login-form .btn {
+    background-color: var(--main-color);
+    color: var(--first-text-color);
+    padding: 10px 30px;
+}
+
+
+/* header section */
+
+.header-section {
+    background-image: url(/image/car1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    background: transparent;
+    padding-top: 10px;
+}
+
+.logo {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 25px;
+    text-shadow: var(--shadow);
+    transition: .5s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.navbar a {
+    color: var(--main-color);
+    margin-left: 30px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--btn-color);
+}
+
+.header .open-menu{
+    display: none;
+}
+.header .open-menu i {
+    font-size: 30px;
+}
+
+.btn {
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    padding: 7px 10px;
+    font-size: 15px;
+    color: var(--btn-color);
+    transition: all .5s;
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+    color: var(--first-text-color);
+    transform: scale(1.1);
+}
+
+
+/* about section */
+.about-content {
+    margin: 20px 40px;
+    text-align: justify;
+}
+
+.about-content h2 {
+    color: var(--main-color);
+}
+
+
+/* gallery section */
+
+.gallery {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.gallery h1 {
+    text-align: center;
+    color: var(--main-color);
+    margin: 60px 0 30px 0;
+}
+
+.img-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+} 
+
+.img-gallery img {
+    border-radius: 10px;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: .1rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    margin:  6px 6px 0 0;
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--first-text-color);
+}
+
+
+/* Contact */
+
+.contact {
+    margin: 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom:10px;
+    color: var(--main-color);
+
+}
+
+.section-title h3{
+    color: var(--btn-color);
+    margin: 0;
+}
+
+.section-title h4{
+    color: var(--btn-color);
+    margin: 0;
+}
+
+.contact-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.contact-info-item {
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+.contact-info-item i {
+    font-size: 25px;
+}
+
+.contact-info-item p {
+    color: var(--bg-color);
+    font-weight: 100;
+    margin: 0;
+}
+
+.second-section-title {
+    text-align: center;
+    margin: 60px 0 40px 0;
+    color: var(--main-color);
+}
+
+.second-section-title h4 {
+    color: var(--btn-color);
+}
+
+.contact-form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contact-form input[type=text], 
+.contact-form input[type=email],
+.contact-form .form-group textarea {
+    padding-left: 20px; 
+    color: var(--first-text-color);
+}
+  
+.contact-form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact-form-group .form-group {
+    width: 100%;
+}
+
+.contact-form input::placeholder, 
+.contact-form textarea::placeholder {
+    color: var(--second-text-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border-radius: 25px;
+    padding: 18px 0;
+    background: var(--third-text-color); 
+    border: 1px solid var(--main-color);
+    margin: 10px 0;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 3px solid var(--main-color);
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 70px;
+    resize: none;
+}
+
+.form-btn {
+    text-align: right;
+}
+.form-btn .btn {
+    color: var(--btn-color);
+    padding: 15px;
+    border-radius: 25px;
+}
+.form-btn .btn:hover {
+    color: #fff;
+}
+
+
+/* footer section */
+
+.footer {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #414040;
+    padding: 30px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    color: #fff;
+}
+
+.footer-content .image img{
+    width: 400px;
+}
+
+.day-open h5 {
+    margin-bottom: 0;
+}
+
+.contact-info {
+    margin-bottom: 15px;
+}
+
+.contact-info i {
+    color: var(--main-color);
+}
+
+.footer-content span {
+    font-size: 13px;
+    color: var(--third-text-color);
+}
+
+.second-footer {
+    padding: 15px;
+    background: rgb(19, 19, 19);
+    text-align: center;
+    border-top: 1px solid #fff;
+}
+
+.footer-text p {
+    font-size: 13px;
+    color: var(--second-text-color);
+}
+
+
+/* media query section */
+@media (max-width: 1003px) {
+    .login-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 803px) {
+    .header .open-menu{
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+    .menu-position {
+        position: relative;
+    }
+    .navbar.open-nav-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 25%;
+        height: 30vh;
+        width: 200px;
+        background: #f8f6f3;
+        z-index: 20;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .navbar a{
+        padding: 10px 0;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 683px) {
+    .login-container {
+        width: 90%;
+    }
+}
